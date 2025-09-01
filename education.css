@@ -1,0 +1,290 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f6f8;
+}
+
+
+header {
+    width: 100%;
+}
+
+
+.top-header {
+    background-color: #15401f;
+    padding: 5px 15px;
+}
+
+.top-header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+}
+
+.top-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.top-header nav ul li a:hover {
+    color: #f4d03f;
+}
+
+.bottom-header {
+    background-color: #2e7d32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+.bottom-header .logo img {
+    max-width: 150px;
+}
+
+.bottom-header nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.bottom-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.bottom-header nav ul li a:hover {
+    color: #f4d03f;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 36px;
+    color: #2e7d32;
+}
+
+h2 {
+    margin: 20px 0 10px;
+    text-align: center;
+    font-size: 24px;
+    color: #1b5e20;
+}
+
+h3 {
+    margin: 30px 0 15px;
+    text-align: center;
+    font-size: 28px;
+    color: #15401f;
+}
+
+
+article {
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+main {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.left-side,
+.right-side {
+    flex: 1;
+    min-width: 320px;
+}
+
+.left-side img,
+.right-side img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.left-side img:hover,
+.right-side img:hover {
+    transform: scale(1.03);
+}
+
+.left-side p,
+.right-side p {
+    margin-bottom: 12px;
+}
+
+aside {
+    background-image: url("Images/bark-parallax02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+aside .aside-container {
+    background: rgba(21, 63, 21, 0.9);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 80%;
+}
+
+aside p {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+aside button {
+    background: #f4d03f;
+    color: #15401f;
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+aside button:hover {
+    background: #ffd740;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #2c3e50;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 30px;
+    gap: 30px;
+    color: #fff;
+}
+
+footer > div {
+    flex: 1;
+    min-width: 220px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+footer nav ul li {
+    margin: 10px 0;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #f4d03f;
+}
+
+
+footer .footer-line2 p {
+    margin: 8px 0;
+    text-align: center;
+}
+
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter input {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #34495e;
+    color: #fff;
+}
+
+.newsletter button {
+    background: #27ae60;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: #1e8449;
+}
+
+
+.fa {
+  padding: 12px;
+  font-size: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+
+.fa-facebook { background: #3B5998; color: white; }
+.fa-twitter { background: #55ACEE; color: white; }
+.fa-linkedin { background: #007bb5; color: white; }
+.fa-instagram { background: #125688; color: white; }
+.fa-reddit { background: #ff5700; color: white; }
+.fa-rss { background: #ff6600; color: white; }
+
+
+@media (max-width: 900px) {
+    .bottom-header nav ul {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 15px;
+    }
+}
